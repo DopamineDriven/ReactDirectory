@@ -145,12 +145,13 @@ const TableArea = () => {
     // if devState.filteredUsers.length is greater than 0
     // then load <TableData /> component
     // else load an empty div
+
     return (
         <TableAreaContext.Provider 
             value={{ devState, deltaHandler, sortHandler }}
         >
             <Navbar />
-            <div className="data-area">
+            <div className="data-area w-90 mx-auto">
                 {devState.filteredUsers.length > 0 ? <TableData /> : <div></div>}
             </div>
         </TableAreaContext.Provider>
