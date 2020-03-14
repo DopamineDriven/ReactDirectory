@@ -43,7 +43,9 @@ const TableBody = () => {
                                 {phone}
                             </td>
                             <td className="align-middle" data-th="email">
-                                {email}
+                                <a href={"mailto: " + email} target="__blank">
+                                    {email}
+                                </a>
                             </td>
                             <td className="align-middle" data-th="dob">
                                 {FormatDOB(dob.date)}
@@ -66,3 +68,5 @@ export default TableBody;
 // <a href={`mailto: ${email}`} target='__blank'>
 //     {email}
 // </a>
+
+// update: syntax successfully incorporated

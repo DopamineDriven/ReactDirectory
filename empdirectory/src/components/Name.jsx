@@ -12,6 +12,13 @@ const Name = () => {
                         Search Here
                     </span>
                 </div>
+                <input 
+                    type="search" 
+                    className="form-control mr-sm-2" 
+                    placeholder="name"
+                    aria-label="search"
+                    onChange={e => context.deltaHandler(e)}
+                />
             </div>
         </div>
     )

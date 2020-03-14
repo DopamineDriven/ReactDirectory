@@ -1,6 +1,5 @@
 import React from 'react';
 import Name from './Name.jsx';
-import DOB from './DOB.jsx';
 
 const Navbar = () => {
     return (
@@ -17,7 +16,7 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse row">
                 <div className="search-area col-4">
-                    
+                    <Name />
                 </div>
             </div>
         </nav>
