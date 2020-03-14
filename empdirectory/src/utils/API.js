@@ -7,5 +7,5 @@ export default {
         )
     }
 }
-
+// documentation implies certain keys can be called via url
 // &inc=name,email,dob,cell,picture
