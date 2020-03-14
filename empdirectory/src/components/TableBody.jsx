@@ -21,8 +21,8 @@ const TableBody = () => {
 
     return (
         <tbody>
-            {context.developerState.filteredUsers[0] !== undefined && context.developerState.filteredUsers[0].name !== undefined ? (
-                context.developerState.filteredUsers.map(({ login, name, picture, phone, email, dob }) => {
+            {context.devState.filteredUsers[0] !== undefined && context.devState.filteredUsers[0].name !== undefined ? (
+                context.devState.filteredUsers.map(({ login, name, picture, phone, email, dob }) => {
                     return (
                         // this api uses uuid for user-sensitive login info
                         // this is confirmed via the use of postman to get the info

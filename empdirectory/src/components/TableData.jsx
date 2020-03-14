@@ -10,7 +10,7 @@ const TableData = () => {
             <table className="table-striped table-hover table-condensed">
                 <thead>
                     <tr>
-                        {context.developerState.headings.map(({ name, width }) => {
+                        {context.devState.headings.map(({ name, width }) => {
                             return (
                                 <th 
                                     className="col"
