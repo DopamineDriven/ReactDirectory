@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TableData from './TableData.jsx';
+import Navbar from './Navbar.jsx';
 import API from '../utils/API.js';
 import TableAreaContext from '../utils/TableAreaContext.js';
 
@@ -29,13 +30,19 @@ const TableArea = () => {
             // order for all elements is descending
             .map(element => element.order)
             // returns string representation of array
-            .toString();
+            .toString()
 
         // ternary (conditional) operator
         // if order === descend
         // then order === ascend
         // else order === descend (implying initial order was ascend)
-        (ahoraOrder==="descend" ? ahoraOrder==="ascend" : ahoraOrder==="descend")
+            // if (ahoraOrder === 'descend') {
+            //     ahoraOrder === 'ascend'
+            // }
+            // else {
+            //     ahoraOrder === 'descend'
+            // }
+        // (ahoraOrder==="descend" ? ahoraOrder==="ascend" : ahoraOrder==="descend")
     
         // comparing x and y for sorting
         // return values stem from localeCompare() methodology
@@ -113,8 +120,7 @@ const TableArea = () => {
 
         setDevState({
             ...devState,
-            filteredUsers,
-            listsFiltered
+            filteredUsers: listsFiltered
         })
     };
     // useEffect to call loading function w/ react only once

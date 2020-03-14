@@ -1,11 +1,11 @@
 // Main.jsx imports TableData.jsx
 import React from 'react';
-import TableData from './TableData.jsx';
+import TableArea from './TableArea.jsx';
 
 const Main = () => {
     return (
         <>
-            <TableData />
+            <TableArea />
         </>
     )
 };

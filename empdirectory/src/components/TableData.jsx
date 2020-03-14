@@ -7,7 +7,7 @@ const TableData = () => {
 
     return (
         <div className="datatable mt-5">
-            <table className="table-striped table-hover table-condensed">
+            <table id="table" className="table-striped table-hover table-condensed">
                 <thead>
                     <tr>
                         {context.devState.headings.map(({ name, width }) => {
@@ -18,7 +18,7 @@ const TableData = () => {
                                     style={{ width }}
                                     // onClick handle sort by name function
                                     onClick={() => {
-                                        context.handleSort(name)
+                                        context.sortHandler(name)
                                     }}
                                 >
                                     {name}
